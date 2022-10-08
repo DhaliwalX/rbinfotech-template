@@ -39,12 +39,20 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
-    body
+    body(style='background-color:#eaeaea')
 
         // Navigation
         nav.navbar.navbar-light.bg-light.static-top
-            .container
-                a.navbar-brand(href='#!') RB Infotech
+            .container.position-relative
+                .row.align-items-center
+                    .col-lg-2
+                        .container
+                            .row.align-items-center
+                                .col
+                                    img.img-fluid(src='assets/img/apple-icon.png', style='width:40px; height:auto') 
+                                .col
+                                    a.navbar-brand(href='#!') RB Infotech
+                    .col-lg-2
                 //a.btn.btn-primary(href='#signup') Sign Up
 
         // Masthead
